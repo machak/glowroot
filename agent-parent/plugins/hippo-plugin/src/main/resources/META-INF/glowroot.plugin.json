@@ -1,0 +1,37 @@
+{
+  "name": "Hippo Plugin",
+  "id": "hippo",
+  "instrumentation": [
+    {
+      "className": "org.hippoecm.hst.content.beans.query.HstQuery",
+      "methodName": "execute",
+      "methodParameterTypes": [
+      ],
+      "nestingGroup": "hippo",
+      "captureKind": "timer",
+      "timerName": "hippo query"
+    },
+    {
+      "className": "org.hippoecm.hst.component.support.bean.BaseHstComponent",
+      "methodName": "doBeforeRender",
+      "methodParameterTypes": [
+        "org.hippoecm.hst.core.component.HstRequest",
+        "org.hippoecm.hst.core.component.HstResponse"
+      ],
+      "nestingGroup": "hippo",
+      "captureKind": "timer",
+      "timerName": "hippo doBeforeRender"
+    },
+    {
+      "className": "org.hippoecm.hst.component.support.bean.BaseHstComponent",
+      "methodName": "doAction",
+      "methodParameterTypes": [
+        "org.hippoecm.hst.core.component.HstRequest",
+        "org.hippoecm.hst.core.component.HstResponse"
+      ],
+      "nestingGroup": "hippo",
+      "captureKind": "timer",
+      "timerName": "hippo doAction"
+    }
+  ]
+}

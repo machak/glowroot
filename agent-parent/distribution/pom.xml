@@ -39,6 +39,11 @@
     </dependency>
     <dependency>
       <groupId>org.glowroot</groupId>
+      <artifactId>glowroot-agent-hippo-plugin</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glowroot</groupId>
       <artifactId>glowroot-agent-http-client-plugin</artifactId>
       <version>${project.version}</version>
     </dependency>
